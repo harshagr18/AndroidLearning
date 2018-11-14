@@ -49,6 +49,6 @@ int nocoffee=0;
      */
     private void displayPrice(int number) {
         TextView priceTextView = (TextView) findViewById(R.id.price_no);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+        priceTextView.setText("TOTAL " + NumberFormat.getCurrencyInstance().format(number)+"\nThank You!");
     }
 }
