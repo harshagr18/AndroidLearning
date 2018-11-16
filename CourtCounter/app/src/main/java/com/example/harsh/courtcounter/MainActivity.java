@@ -44,11 +44,11 @@ int ascore=0,bscore=0;
         updatea(ascore);
         updateb(bscore);
     }
-    private void updatea(int ascore) {
+    public void updatea(int ascore) {
         TextView atextview = (TextView) findViewById(R.id.teamascore);
                 atextview.setText(ascore);
     }
-    private void updateb(int bscore) {
+    public void updateb(int bscore) {
         TextView btextview = (TextView) findViewById(R.id.teambscore);
         btextview.setText(bscore);
     }
