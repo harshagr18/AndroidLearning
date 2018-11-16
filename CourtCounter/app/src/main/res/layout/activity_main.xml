@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:onClick="b3pt"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="138dp"
+        android:text="+3 points" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="reset"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/teama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="22dp"
+        android:text="Team A" />
+
+    <TextView
+        android:id="@+id/teamascore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/teama"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:text="0"
+        android:textSize="70dp" />
+
+    <Button
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/a3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="201dp"
+        android:onClick="a2pt"
+        android:text="+2 points" />
+
+    <Button
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/a3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-9dp"
+        android:onClick="a1pt"
+        android:layout_marginBottom="195dp"
+        android:text="Free throw" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/teamb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="22dp"
+        android:text="Team B" />
+
+    <TextView
+        android:id="@+id/teambscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/teama"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="-190dp"
+        android:text="0"
+        android:textSize="70dp" />
+
+    <Button
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="139dp"
+        android:onClick="a3pt"
+        android:text="+3 points" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/a3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="-191dp"
+        android:onClick="b2pt"
+        android:text="+2 points" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/a3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-204dp"
+        android:layout_marginBottom="195dp"
+        android:onClick="b1pt"
+        android:text="Free throw" />
+
+
+</RelativeLayout>
