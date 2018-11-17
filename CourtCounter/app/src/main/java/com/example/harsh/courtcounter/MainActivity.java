@@ -46,10 +46,10 @@ int ascore=0,bscore=0;
     }
     public void updatea(int ascore) {
         TextView atextview = (TextView) findViewById(R.id.teamascore);
-                atextview.setText(ascore);
+        atextview.setText(" " + ascore);
     }
     public void updateb(int bscore) {
         TextView btextview = (TextView) findViewById(R.id.teambscore);
-        btextview.setText(bscore);
+        btextview.setText(" " + bscore);
     }
 }
