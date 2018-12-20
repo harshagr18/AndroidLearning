@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOPPINGS"
+        android:id="@+id/topheader"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/creamcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topheader"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:paddingLeft="24dp"
+        android:text="Whipped Cream"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
 
     <TextView
         android:id="@+id/quantity_text"
@@ -12,10 +35,8 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:text="QUANTITY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/creamcheck"
+         />
 
 
     <Button
@@ -30,14 +51,15 @@
 
     <TextView
         android:id="@+id/quantity_no"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="50dp"
-        android:textSize="16sp"
-        android:textColor="#000000"
-        android:layout_toRightOf="@id/plus_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0" />
+        android:layout_alignBottom="@+id/plus_button"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@id/plus_button"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
 
     <Button
@@ -45,7 +67,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignBaseline="@+id/plus_button"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="18dp"
         android:layout_toRightOf="@id/quantity_no"
         android:onClick="decrement"
         android:text="-" />
@@ -55,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="PRICE"
+        android:text="Order Summary"
         android:layout_below="@id/plus_button"
         />
 
@@ -68,7 +90,7 @@
         android:layout_below="@id/price_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$0" />
+        android:text="TOTAL 0"/>
 
     <Button
         android:id="@+id/order_button"
@@ -79,6 +101,5 @@
         android:layout_marginLeft="8dp"
         android:onClick="submitOrder"
         android:text="ORDER" />
-
-
 </RelativeLayout>
+</ScrollView>
