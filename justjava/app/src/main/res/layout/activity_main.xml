@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         android:text="TOPPINGS"
         android:id="@+id/topheader"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        style="@style/HeaderTextStyle"/>
 
     <CheckBox
         android:id="@+id/creamcheck"
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:text="QUANTITY"
+        style="@style/HeaderTextStyle"
         android:layout_below="@+id/chococheck"
          />
 
